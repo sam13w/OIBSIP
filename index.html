@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-commerce landing page</title>
+        <link rel="stylesheet" href="style1.css">
+        <script src="js.js"></script>
+    </head>
+    <body>
+     <section>
+        <div class="circle"></div>
+        <div class="circle2"></div>
+        <header>
+            <a href="#"><img src="img_logo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a> </li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's Premium and <br>luxury <span class="h2">Jacket</span></h2>
+                <p>Introducing the pinnacle of luxury and style, the Premium Jacket is a testament to the artistry of
+                 craftsmanship and the embodiment of refined elegance.  </p> 
+                <a href="#">Buy</a>
+            </div>
+        <div class="imgBox">
+            <img src="jacket1.png " id="star" >
+        </div>
+        <div class="text-j">
+          <span class="tex">
+             Price : $10 </span>
+        </div>
+        <ul class="thumb">
+            <li><img src="jacket1.png" onclick="imgSlider('jacket1.png');changecirclecolor('#ADD8E6');h2color('#F0F3F4');ch('#ADD8E6');text1('Price : $10')" ></li>
+            <li><img src="jacket2.png" onclick="imgSlider('jacket2.png');changecirclecolor('#FFC0CB');h2color('#FFC0CB');ch('#eb7495');text1('Price : $20')"></li>
+            <li><img src="jacket3.png" onclick="imgSlider('jacket3.png');changecirclecolor('gray');h2color('black');ch('#AABBCC');text1('Price : $24')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a>
+            <li><a href="#"><img src="twitter.png"></a>
+            <li><a href="#"><img src="instagram.png"></a>
+        </ul>
+    </div>
+    </section>
+    </body>
+</html>

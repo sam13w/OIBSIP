@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f7f5;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 81px;
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3f7f3;
+    box-shadow: 2px 3px 9px 3px #908d8d;
+}
+header .logo{
+    position:relative;
+    max-width: 90px;
+    max-height: 85px;
+    border-radius: 100px;
+    
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 40px;
+    text-decoration: none;
+    position: relative; 
+}
+header ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #79bccf;
+    width: 0%;
+    height: 3px;
+    transition: width 0.3s;
+}
+header ul li a:hover::after {
+    width: 100%;
+}
+.content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.content .textBox{
+    position: relative
+    max-width 600px;
+}
+.content .textBox h2{
+    
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox  h2 span{
+    
+    color: rgb(240, 243, 244);
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p{
+    color: #333;
+    margin-right: 35%;
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top:20px ;
+    padding: 8px 20px;
+    background: rgb(74, 186, 255);
+    color: #fff;
+    border-radius:40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    box-shadow: 2px 3px 9px 3px #a4a3a3;
+}
+.content .textBox a:hover{
+    background-color:rgb(41, 162, 238) ;
+}
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+    box-shadow: 2px 3px 9px 3px #908d8d;
+}
+.content .imgBox img{
+    max-width: 340px;
+}
+.text-j{
+   margin-top: 43%;
+   margin-left: 80%; 
+   position: absolute;
+   display: inline-block;
+}
+.thumb{
+    position: absolute;
+    display: flex;
+    left:35%;
+    top: 60vh;
+   
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.thumb li img{
+    max-width: 60px;
+    transition: 0.5s;
+}
+.thumb li img:hover{
+    transform: scale(2);
+    
+}
+.sci{
+    position: absolute;
+   gap: 15px;
+    top: 110%;
+   right: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sci li{
+    list-style: none;
+    
+}
+.sci li a{
+    display: inline-block;
+    margin: 5px 0;
+    transition: 0.5s;
+   
+    
+}
+.sci li a:hover{
+    transform: scaleZ(-5);
+   
+}
+.sci img{
+    height: 25px;
+}
+.circle{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    clip-path: circle(600px at right 800px);
+}
+.circle2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    clip-path: circle(700px at left 300px);
+}
+
+
+@media  screen and (max-width: 700px) {
+    section {
+        padding: 30px;
+    }
+
+    header {
+        padding: 10px 30px;
+    }
+
+    .content .textBox h2 {
+        font-size: 2em;
+    }
+
+    .content .textBox h2 span {
+        font-size: 0.8em;
+    }
+
+    .content .textBox p {
+        font-size: 0.8em;
+    }
+
+    .content .textBox a {
+        font-size: 0.8em;
+        padding: 6px 15px;
+    }
+
+    .content .imgBox {
+        padding: 2px;
+        margin-right: 9px;
+        
+    }
+
+    .thumb {
+        margin: 90px 0 ;
+        
+    }
+
+    .thumb li img {
+        max-width: 40px;
+       
+    }
+    
+    .sci img {
+        height: 18px;
+       
+    }
+}
